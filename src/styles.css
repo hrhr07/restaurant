@@ -1,3 +1,21 @@
 body {
-  background-color: greenyellow;
+  background-color: grey;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#content {
+  text-align: center;
+  margin-top: 20px;
+}
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid black;
 }
