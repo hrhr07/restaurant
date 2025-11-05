@@ -1,18 +1,34 @@
 import "./styles.css";
-import restaurantImage from "./images/restaurant.jpg";
 
-const content = document.querySelector("#content");
+import Home from "./pages/home.js";
+import About from "./pages/about.js";
+import Contact from "./pages/contact.js";
 
-const imgElement = document.createElement("img");
-imgElement.src = restaurantImage;
-imgElement.alt = "Restaurant Image";
+function setupHomeButton() {
+  const button = document.getElementById("home-button");
+  if (button) {
+    button.addEventListener("click", Home);
+  }
+}
 
-const title = document.createElement("h1");
-title.textContent = "Welcome to Our Restaurant";
+function setupAboutButton() {
+  const button = document.getElementById("about-button");
+  if (button) {
+    button.addEventListener("click", About);
+  }
+}
 
-const description = document.createElement("p");
-description.textContent = "Experience the finest dining with us.";
+function setupContactButton() {
+  const button = document.getElementById("contact-button");
+  if (button) {
+    button.addEventListener("click", Contact);
+  }
+}
 
-content.appendChild(imgElement);
-content.appendChild(title);
-content.appendChild(description);
+document.addEventListener("DOMContentLoaded", () => {
+  setupHomeButton();
+  setupAboutButton();
+  setupContactButton();
+
+  Home();
+});
