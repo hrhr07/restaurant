@@ -4,7 +4,7 @@ export default function About() {
   content.innerHTML = "";
 
   const title = document.createElement("h1");
-  title.textContent = "About Our Restaurant";
+  title.textContent = "Our Restaurant";
 
   const description = document.createElement("p");
   description.textContent =
