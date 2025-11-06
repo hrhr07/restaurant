@@ -5,8 +5,8 @@ const path = require("path");
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "[name].[contenthash].js", // better caching
+    filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
-    clean: true, // clears dist each build
+    clean: true,
   },
 });
